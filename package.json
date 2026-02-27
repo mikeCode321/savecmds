@@ -4,6 +4,7 @@
   "description": "save terminal cmds for reuse",
   "version": "0.0.2",
   "publisher": "mikea-dev",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
