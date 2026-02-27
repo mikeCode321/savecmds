@@ -2,35 +2,74 @@
   "name": "savecmds",
   "displayName": "savecmds",
   "description": "save terminal cmds for reuse",
-  "version": "0.0.1",
-  "publisher": "savecmds",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Other"],
-  "activationEvents": ["onStartupFinished"],
+  "version": "0.0.2",
+  "publisher": "mikea-dev",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "main-icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
-      "activitybar": [{
-        "id": "saved-commands",
-        "title": "Saved Commands",
-        "icon": "media/icon.svg"
-      }]
+      "activitybar": [
+        {
+          "id": "saved-commands",
+          "title": "Saved Commands",
+          "icon": "media/icon.svg"
+        }
+      ]
     },
     "views": {
-      "saved-commands": [{
-        "id": "savedCommandsView",
-        "name": "Commands",
-        "dragAndDrop": true
-      }]
+      "saved-commands": [
+        {
+          "id": "savedCommandsView",
+          "name": "Commands",
+          "dragAndDrop": true
+        }
+      ]
     },
     "commands": [
-      { "command": "savedCommands.add", "title": "Add Command", "icon": "$(add)" },
-      { "command": "savedCommands.delete", "title": "Delete", "icon": "$(trash)" },
-      { "command": "savedCommands.edit", "title": "Edit Command", "icon": "$(edit)" },
-      { "command": "savedCommands.addFolder", "title": "Add Folder", "icon": "$(new-folder)" },
-      { "command": "savedCommands.addToFolder", "title": "Add Command to Folder", "icon": "$(add)" },
-      { "command": "savedCommands.deleteFolder", "title": "Delete Folder", "icon": "$(trash)" },
-      { "command": "savedCommands.editFolder", "title": "Edit Folder Name", "icon": "$(edit)" }
+      {
+        "command": "savedCommands.add",
+        "title": "Add Command",
+        "icon": "$(add)"
+      },
+      {
+        "command": "savedCommands.delete",
+        "title": "Delete",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "savedCommands.edit",
+        "title": "Edit Command",
+        "icon": "$(edit)"
+      },
+      {
+        "command": "savedCommands.addFolder",
+        "title": "Add Folder",
+        "icon": "$(new-folder)"
+      },
+      {
+        "command": "savedCommands.addToFolder",
+        "title": "Add Command to Folder",
+        "icon": "$(add)"
+      },
+      {
+        "command": "savedCommands.deleteFolder",
+        "title": "Delete Folder",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "savedCommands.editFolder",
+        "title": "Edit Folder Name",
+        "icon": "$(edit)"
+      }
     ],
     "menus": {
       "view/title": [
@@ -83,13 +122,13 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "typescript-eslint": "^8.54.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
     "eslint": "^9.39.2",
     "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "typescript-eslint": "^8.54.0"
   }
 }
