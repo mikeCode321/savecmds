@@ -6,6 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.0.4] - 2026-09-12
+- Fixed publisher ID to match marketplace account (MikeA)
+
 ## [0.0.3] - 2026-09-12
 - SEO optimization for better marketplace discoverability
 - Updated display name to "Saved Commands Manager"
