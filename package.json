@@ -1,8 +1,8 @@
 {
-  "name": "savecmds",
-  "displayName": "Saved Commands Manager",
-  "description": "Save, organize, and run terminal commands directly from VS Code sidebar. Boost productivity with reusable command snippets, folder organization, and dynamic placeholders.",
-  "version": "0.0.4",
+  "name": "save-commands-manager",
+  "displayName": "Save Commands Manager",
+  "description": "Save, organize, and run terminal commands directly from the IDE sidebar. Boost productivity with reusable command snippets, folder organization, and dynamic placeholders. Save commands.",
+  "version": "0.0.5",
   "publisher": "MikeA",
   "license": "MIT",
   "engines": {
@@ -24,7 +24,7 @@
     "shell",
     "developer-tools",
     "automation",
-    "saved-commands",
+    "save-commands",
     "command-manager"
   ],
   "activationEvents": [
@@ -35,14 +35,14 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "saved-commands",
-          "title": "Saved Commands",
+          "id": "save-commands",
+          "title": "Save Commands",
           "icon": "media/icon.svg"
         }
       ]
     },
     "views": {
-      "saved-commands": [
+      "save-commands": [
         {
           "id": "savedCommandsView",
           "name": "Commands",
