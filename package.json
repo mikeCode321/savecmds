@@ -1,7 +1,7 @@
 {
   "name": "savecmds",
-  "displayName": "savecmds",
-  "description": "save terminal cmds for reuse",
+  "displayName": "Saved Commands Manager",
+  "description": "Save, organize, and run terminal commands directly from VS Code sidebar. Boost productivity with reusable command snippets, folder organization, and dynamic placeholders.",
   "version": "0.0.2",
   "publisher": "mikea-dev",
   "license": "MIT",
@@ -10,7 +10,22 @@
   },
   "icon": "main-icon.png",
   "categories": [
+    "Snippets",
     "Other"
+  ],
+  "keywords": [
+    "terminal",
+    "commands",
+    "snippets",
+    "productivity",
+    "workflow",
+    "command-line",
+    "bash",
+    "shell",
+    "developer-tools",
+    "automation",
+    "saved-commands",
+    "command-manager"
   ],
   "activationEvents": [
     "onStartupFinished"
