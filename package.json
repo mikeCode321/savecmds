@@ -46,7 +46,8 @@
         {
           "id": "savedCommandsView",
           "name": "Commands",
-          "dragAndDrop": true
+          "dragAndDrop": true,
+          "icon": "media/icon.svg"
         }
       ]
     },
